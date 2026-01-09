@@ -74,11 +74,12 @@ function getTasksFromDOM() {
 }
 
 function saveTasks(tasks) {
-<<<<<<< HEAD
- 
-	
-=======
-
->>>>>>> 62e77a0b76d8f648400bace7aa4adfc97dec494d
+    localStorage.setItem(storageKey, JSON.stringify(tasks));
 }
+
+items = loadTasks();
+
+items.forEach((item) => {
+    listElement.append(createItem(item));
+});
 
