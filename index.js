@@ -1,16 +1,28 @@
 let items = [
+<<<<<<< HEAD
     "Сделать проектную работу",
     "Полить цветы",
     "Пройти туториал по Реакту",
     "Сделать фронт для своего проекта",
     "Прогуляться по улице в солнечный день",
     "Помыть посуду",
+=======
+	"Сделать проектную работу",
+	"Полить цветы",
+	"Пройти туториал по Реакту",
+	"Сделать фронт для своего проекта",
+	"Прогуляться по улице в солнечный день",
+	"Помыть посуду",
+>>>>>>> 62e77a0b76d8f648400bace7aa4adfc97dec494d
 ];
 
 const listElement = document.querySelector(".to-do__list");
 const formElement = document.querySelector(".to-do__form");
 const inputElement = document.querySelector(".to-do__input");
+<<<<<<< HEAD
 const storageKey = "toDoItems";
+=======
+>>>>>>> 62e77a0b76d8f648400bace7aa4adfc97dec494d
 
 function loadTasks() {
 
@@ -31,7 +43,11 @@ function getTasksFromDOM() {
 }
 
 function saveTasks(tasks) {
+<<<<<<< HEAD
  
 	
+=======
+
+>>>>>>> 62e77a0b76d8f648400bace7aa4adfc97dec494d
 }
 
