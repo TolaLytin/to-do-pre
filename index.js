@@ -25,7 +25,15 @@ const storageKey = "toDoItems";
 >>>>>>> 62e77a0b76d8f648400bace7aa4adfc97dec494d
 
 function loadTasks() {
+    const storedTasks = localStorage.getItem(storageKey);
+    if (!storedTasks) return items;
 
+    try {
+        const parsedTasks = JSON.parse(storedTasks);
+        return Array.isArray(parsedTasks) ? parsedTasks : items;
+    } catch (e) {
+        return items;
+    }
 }
 
 function createItem(item) {
