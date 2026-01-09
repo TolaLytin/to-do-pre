@@ -67,6 +67,15 @@ textElement.textContent = item;
         textElement.focus();
     });
 
+		 textElement.addEventListener("blur", () => {
+        textElement.setAttribute("contenteditable", "false");
+        const items = getTasksFromDOM();
+        saveTasks(items);
+    });
+
+    return clone;
+}
+
 function getTasksFromDOM() {
 
 }
